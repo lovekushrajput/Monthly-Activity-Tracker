@@ -1,0 +1,336 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* custom */
+body {
+  font-family: "Rajdhani", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* variables */
+.root {
+  ---Primary: rgb(89, 191, 194);
+  ---Secondary: white;
+  ---text-dark: rgb(40, 62, 125);
+  ---bg-light: rgb(213, 229, 229);
+  ---text-light: rgb(110, 113, 120);
+}
+
+/* general classes */
+.center {
+  text-align: center;
+}
+
+.margin {
+  margin: 1rem;
+}
+
+.padding {
+  padding: 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 16px;
+  color: var(---Secondary);
+  background-color: var(---Primary);
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-space {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.column-10 {
+  -ms-grid-columns: (3.8rem)[10];
+      grid-template-columns: repeat(10, 3.8rem);
+}
+
+.c-gap {
+  -webkit-column-gap: 0.5rem;
+          column-gap: 0.5rem;
+}
+
+.r-gap {
+  row-gap: 1rem;
+}
+
+.border-radius-3 {
+  border-radius: 0.3rem;
+}
+
+.border-radius-2 {
+  border-radius: 0.2rem;
+}
+
+.border-redius-circle {
+  border-radius: 50%;
+}
+
+body {
+  margin: 2rem 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #3e8ed0;
+  margin: 1.5rem 0;
+}
+
+form input {
+  padding: 0.7rem 0;
+  padding-left: 1rem;
+  width: 20%;
+  border: 1.3px solid #dbdbdb;
+  border-top-left-radius: 0.2rem;
+  border-bottom-left-radius: 0.2rem;
+  outline-width: thin;
+  outline-color: blue;
+}
+
+form input:hover {
+  border: 1.3px solid #c6c6c6;
+}
+
+button {
+  background-color: #00d1b2;
+  border-color: transparent;
+  color: white;
+  font-size: 1rem;
+  padding: 0 1rem;
+}
+
+.box {
+  margin-top: 1.5rem;
+  padding: 0.5rem;
+  width: 85%;
+  -webkit-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.18);
+          box-shadow: 0 2px 9px rgba(0, 0, 0, 0.18);
+}
+
+.activityName {
+  width: 25%;
+  background-color: #eff5fb;
+  font-size: 1rem;
+  color: #3c3636;
+}
+
+.activityName h2 {
+  color: #4a4a4a;
+  margin-bottom: 0.5rem;
+}
+
+.activityName p {
+  background-color: #ff6347;
+  color: white;
+  padding: 0.3rem 0.2rem;
+}
+
+.totalDays {
+  padding: 0.8rem 0;
+}
+
+.totalDays div {
+  border: 1px solid #dbdbdb;
+  height: 2.5rem;
+}
+
+.totalDays div:hover {
+  border: 1px solid blue;
+  cursor: pointer;
+}
+
+.cross {
+  height: 1.4rem;
+  width: 1.4rem;
+  background-color: #f14668;
+  color: white;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #00d1b2;
+}
+/*# sourceMappingURL=index.css.map */

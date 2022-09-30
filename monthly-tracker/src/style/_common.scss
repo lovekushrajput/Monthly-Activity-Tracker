@@ -1,0 +1,50 @@
+.flex {
+  display: flex;
+}
+
+.flex-space {
+  justify-content: space-between;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+// grid
+
+.grid {
+  display: grid;
+}
+
+.column-10 {
+  grid-template-columns: repeat(10, 3.8rem);
+}
+
+.c-gap {
+  column-gap: 0.5rem;
+}
+
+.r-gap {
+  row-gap: 1rem;
+}
+
+// border-radius
+.border-radius-3 {
+  border-radius: 0.3rem;
+}
+
+.border-radius-2 {
+  border-radius: 0.2rem;
+}
+
+.border-redius-circle {
+  border-radius: 50%;
+}
