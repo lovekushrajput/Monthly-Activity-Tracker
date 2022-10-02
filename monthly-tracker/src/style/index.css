@@ -255,7 +255,12 @@ h1 {
   text-align: center;
   font-size: 1.8rem;
   color: #3e8ed0;
-  margin: 1.5rem 0;
+  margin: 2.4rem 0;
+  font-weight: 600;
+}
+
+form {
+  margin-bottom: 1rem;
 }
 
 form input {
@@ -271,6 +276,26 @@ form input {
 
 form input:hover {
   border: 1.3px solid #c6c6c6;
+}
+
+form input::-webkit-input-placeholder {
+  color: #c6c2c4;
+  font-size: 0.9rem;
+}
+
+form input:-ms-input-placeholder {
+  color: #c6c2c4;
+  font-size: 0.9rem;
+}
+
+form input::-ms-input-placeholder {
+  color: #c6c2c4;
+  font-size: 0.9rem;
+}
+
+form input::placeholder {
+  color: #c6c2c4;
+  font-size: 0.9rem;
 }
 
 button {
@@ -299,12 +324,16 @@ button {
 .activityName h2 {
   color: #4a4a4a;
   margin-bottom: 0.5rem;
+  font-weight: 800;
+  font-size: 1.25rem;
+  text-transform: capitalize;
 }
 
 .activityName p {
   background-color: #ff6347;
   color: white;
   padding: 0.3rem 0.2rem;
+  font-weight: 700;
 }
 
 .totalDays {

@@ -9,7 +9,8 @@ h1 {
   text-align: center;
   font-size: 1.8rem;
   color: #3e8ed0;
-  margin: 1.5rem 0;
+  margin: 2.4rem 0;
+  font-weight: 600;
 }
 
 form {
@@ -25,7 +26,12 @@ form {
     }
     outline-width: thin;
     outline-color: blue;
+    &::placeholder {
+      color: #c6c2c4;
+      font-size: 0.9rem;
+    }
   }
+  margin-bottom: 1rem;
 }
 button {
   background-color: #00d1b2;
@@ -50,11 +56,15 @@ button {
   h2 {
     color: #4a4a4a;
     margin-bottom: 0.5rem;
+    font-weight: 800;
+    font-size: 1.25rem;
+    text-transform: capitalize;
   }
   p {
     background-color: #ff6347;
     color: white;
     padding: 0.3rem 0.2rem;
+    font-weight: 700;
   }
 }
 

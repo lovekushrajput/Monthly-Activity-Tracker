@@ -9,10 +9,10 @@ class App extends React.Component {
     this.state = {
       activityNames: JSON.parse(localStorage.activity) || []
     }
-    this.d = new Date
+    this.d = new Date()
     this.year = this.d.getFullYear()
     this.month = this.d.getMonth()
-    this.totalDays = new Date(this.year, this.month, 0).getDate()
+    this.totalDays = new Date(this.year, this.month + 1, 0).getDate()
     this.monthName = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
   }
 
