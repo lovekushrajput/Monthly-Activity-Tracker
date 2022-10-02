@@ -7,7 +7,7 @@ class App extends React.Component {
   constructor() {
     super()
     this.state = {
-      activityNames: JSON.parse(localStorage.activity) || []
+      activityNames: JSON.parse(localStorage.getItem('activity')) || []
     }
     this.d = new Date()
     this.year = this.d.getFullYear()
